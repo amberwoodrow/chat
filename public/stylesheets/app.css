@@ -132,7 +132,6 @@ input[type=text]{
 }
 
 #scroll {
-  width: 200px;
   height: 500px;
   overflow-y: scroll;
 }
