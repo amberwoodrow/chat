@@ -1,34 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
+html {
+  background-color: #ffc973;
 }
 
-body { 
-  font: 25px Helvetica, Arial;
+body {
+  background-color: #ffc973;
+  font-size: 30px;
+  padding: 30px;
 }
 
-#form { 
-  background: #000; 
+form { 
+  background: #f66f89; 
   padding: 3px; 
-  /*position: fixed; */
   bottom: 0; 
   width: 100%; 
 }
 
-#form input {
+form input {
   border: 0;
   padding: 10px;
-  width: 90%; 
+  width: 100%; 
   margin-right: .5%;
-}
-
-#form button { 
-  width: 9%; 
-  background: 
-  rgb(130, 224, 255); 
-  border: none; 
-  padding: 10px; 
 }
 
 #messages { 
@@ -41,12 +32,9 @@ body {
   padding: 5px 10px; 
 }
 
-#messages li:nth-child(odd) { 
-  background: #eee; 
-}
-
 .messages-container {
   margin-bottom: 6px;
+  background-color: white;
 }
 
 #someone-entered {
@@ -55,13 +43,15 @@ body {
 }
 
 .message-area {
-  position: fixed; 
+  position: absolute; 
   bottom: 0; 
-  width: 90%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
 }
 
-.container {
-  margin-bottom: 40px;
+.chat-container {
   display: none;
 }
 
@@ -69,3 +59,60 @@ body {
   display: none;
 }
 
+.pages {
+  background-color: white;
+  position: relative;
+  margin-top: 40px;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 40px;
+  overflow: scroll;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid white;
+  border-right: 10px solid transparent;
+}
+
+.name-form {
+  margin: auto;
+  width: 75%;
+}
+
+.title {
+  color: #f66f89;
+  text-align: center;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.color {
+  color: #f66f89;
+  font-weight: bold;
+}
+
+#m {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.login {
+  margin-top: 50px;
+}

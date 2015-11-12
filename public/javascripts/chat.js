@@ -7,11 +7,9 @@ $(function() {
     // console.log($(".usernameInput").val());
     username = $(".usernameInput").val().trim();
     $('.login').hide();
-    $('.container').show();
+    $('.chat-container').show();
+    $("#someone-entered").fadeOut("slow");
   });
-
-  $("#someone-entered").fadeOut("slow");
-  console.log("someone entered the chat room!");
 
   $('#form').submit(function(event) {
     event.preventDefault();
@@ -21,9 +19,12 @@ $(function() {
   });
 
   socket.on('data', function (frogs) {
-    $("#messages").append('<li>'+frogs+'</li>');
+    console.log(frogs);
+    $("#messages").append('<li><span class="color">'+frogs.username+": </span>"+frogs.chatMessage+'</li>');
   });
 
+  // var element = $("#chat")[0];
+  // element.scrollTop = element.scrollHeight;
 
 });
 

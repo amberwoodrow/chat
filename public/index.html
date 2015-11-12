@@ -3,50 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <title>Socket.IO chat</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/app.css">
   </head>
   <body>
 
-
-    <section class="pages">
-<!--       <li class="chat page">
-        <div class="chatArea">
-          <ul class="messages"></ul>
-        </div>
-        <input class="inputMessage" placeholder="Type here..."/>
-      </li> -->
-      <section class="login page">
-        <form class="name-form">
-          <h3 class="title">Choose a chat name</h3>
-          <input class="usernameInput" type="text" maxlength="14" />
-        </form>
+    <section class="content">
+      <section class="arrow">
+        
       </section>
+      <section class="pages">
 
-    <section class="container">
+        <section class="login page">
+          <h3 class="title">WHAT'S YOUR NAME?!!!!!!?</h3>
+          <form class="name-form">
+            <input class="usernameInput" type="text" maxlength="14" />
+          </form>
+        </section>
 
-      <section id="someone-entered">
-        someone entered the chat room!
-      </section>
+        <section class="chat-container">
 
-      <section class="messages-container">
-        <ul id="messages">
-          
-        </ul>
-      </section>
+          <section id="someone-entered">
+            <p>Someone entered the chat room!</p>
+          </section>
+
+          <section class="messages-container">
+            <ul id="messages">
+            </ul>
+          </section>
 
 
-      <section class="message-area">
-        <form id="form" action="">
-          <input id="m" autocomplete="off"/>
-          <button id="btn">Send</button>
-        </form>
-      </section>
+          <section class="message-area">
+            <form id="form" action="">
+              <input id="m" autocomplete="off" placeholder="Input message and press enter to submit"/>
+            </form>
+          </section>
 
-    </section> 
-    <!-- container -->
+        </section> <!-- chat-container -->
+      </section> <!-- pages -->
     </section>
-
 
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

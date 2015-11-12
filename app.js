@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 io.on('connect', function(socket){
   socket.on('userAndMessage', function (data) {
     console.log(data);
-    io.emit('data', data.username+": "+data.chatMessage);
+    io.emit('data', data);
     // io.emit('data', JSON.stringify(data));
   });
 });
@@ -90,11 +90,11 @@ io.on('connect', function(socket){
 // troll
 // function troll() {
 //   count = 0;
-//   while(count<20){
-//       console.log("here")
-//       $('#m').val("poop")
-//       $('#chat-form').submit();
+//   while(count<35){
+//       console.log("here");
+//       $('#m').val("poop");
+//       $('#form').submit();
 //       count++;
 //   }
 // }
-// troll()
+// troll();
