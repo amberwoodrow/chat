@@ -9,10 +9,11 @@
   <body>
 
     <section class="content">
+
       <section class="arrow">
-        
       </section>
-      <section class="pages">
+
+      <section class="pages border-radius">
 
         <section class="login page">
           <h3 class="title">WHAT'S YOUR NAME?!!!!!!?</h3>
@@ -21,7 +22,7 @@
           </form>
         </section>
 
-        <section class="chat-container">
+        <section class="chat-container" id="scroll">
 
           <section id="someone-entered">
             <p>Someone entered the chat room!</p>
@@ -32,16 +33,16 @@
             </ul>
           </section>
 
-
-          <section class="message-area">
-            <form id="form" action="">
-              <input id="m" autocomplete="off" placeholder="Input message and press enter to submit"/>
-            </form>
-          </section>
-
         </section> <!-- chat-container -->
       </section> <!-- pages -->
-    </section>
+
+      <section class="message-area border-radius">
+        <form id="form" action="">
+          <input id="m" autocomplete="off" placeholder="Input message and press enter to submit"/>
+        </form>
+      </section>
+
+    </section> <!-- content -->
 
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

@@ -33,7 +33,6 @@ form input {
 }
 
 .messages-container {
-  margin-bottom: 6px;
   background-color: white;
 }
 
@@ -43,12 +42,13 @@ form input {
 }
 
 .message-area {
-  position: absolute; 
   bottom: 0; 
   right: 0;
   left: 0;
-  width: 100%;
+  width: 75%;
   background-color: white;
+  margin: auto;
+  display: none;
 }
 
 .chat-container {
@@ -65,10 +65,15 @@ form input {
   margin-top: 40px;
   width: 75%;
   margin: auto;
-  margin-bottom: 40px;
   overflow: scroll;
   height: 500px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.border-radius {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .arrow {
@@ -115,4 +120,19 @@ form input {
 
 .login {
   margin-top: 50px;
+}
+
+input[type=text]{
+  border-radius:10px;
+}
+
+#form {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#scroll {
+  width: 200px;
+  height: 500px;
+  overflow-y: scroll;
 }
